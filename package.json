@@ -21,8 +21,8 @@
     "lint:css": "stylelint \"**/*.css\"",
     "lint:css:fix": "stylelint \"**/*.css\" --fix",
     "prettier": "prettier . --write",
-    "lint": "npm run lint:js ; npm run lint:css",
-    "lint:fix": "npm run lint:js:fix ; npm run lint:css:fix ; npm run prettier",
+    "lint": "npm run lint:js && npm run lint:css",
+    "lint:fix": "npm run lint:js:fix && npm run lint:css:fix && npm run prettier",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"

@@ -9,7 +9,7 @@ export default defineConfig([
     files: ['**/*.{js,mjs,cjs}'],
     plugins: {
       js,
-      prettier: prettierPlugin
+      prettier: prettierPlugin,
     },
     extends: ['js/recommended', prettierConfig],
     rules: {
@@ -18,6 +18,10 @@ export default defineConfig([
       eqeqeq: 'warn',
       curly: 'warn',
       'no-else-return': 'warn',
+      env: {
+        node: true,
+        es2021: true
+      },
     },
     languageOptions: { globals: globals.browser },
   },
