@@ -4,25 +4,30 @@ import { defineConfig } from 'eslint/config'
 import prettierPlugin from 'eslint-plugin-prettier'
 import prettierConfig from 'eslint-config-prettier'
 
+
 export default defineConfig([
   {
-    files: ['**/*.{js,mjs,cjs}'],
+    files: ['/**/*.{js,mjs,cjs}'],
     plugins: {
       js,
       prettier: prettierPlugin,
     },
     extends: ['js/recommended', prettierConfig],
+    languageOptions: {
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+        ...globals.es2021,
+      },
+    },
     rules: {
       ...prettierPlugin.configs.recommended.rules,
       'no-console': 'warn',
       eqeqeq: 'warn',
       curly: 'warn',
       'no-else-return': 'warn',
-      env: {
-        node: true,
-        es2021: true
-      },
     },
-    languageOptions: { globals: globals.browser },
   },
 ])
+
+
