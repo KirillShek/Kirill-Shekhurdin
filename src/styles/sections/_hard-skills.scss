@@ -9,7 +9,10 @@
   border-radius: var(--radius-md);
   background: rgba(28, 8, 46, 0.5);
   padding: 1.2rem;
-  transition: transform var(--transition-fast), border-color var(--transition-fast), background-color var(--transition-fast);
+  transition:
+    transform var(--transition-fast),
+    border-color var(--transition-fast),
+    background-color var(--transition-fast);
 }
 
 .skill-card:hover {

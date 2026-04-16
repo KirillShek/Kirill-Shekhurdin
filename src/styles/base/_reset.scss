@@ -46,7 +46,11 @@ body {
   font-family: var(--font-main);
   color: var(--color-text);
   background:
-    radial-gradient(circle at 15% -5%, rgba(113, 34, 186, 0.55), transparent 45%),
+    radial-gradient(
+      circle at 15% -5%,
+      rgba(113, 34, 186, 0.55),
+      transparent 45%
+    ),
     radial-gradient(circle at 85% 10%, rgba(65, 16, 110, 0.7), transparent 35%),
     linear-gradient(160deg, #230a3d 0%, #1d0933 48%, #180729 100%);
 }

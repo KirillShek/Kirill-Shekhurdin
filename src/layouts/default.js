@@ -1,4 +1,7 @@
-export default function DefaultLayout({ title = 'Kirill Shekhurdin', content = '' }) {
+export default function DefaultLayout({
+  title = "Kirill Shekhurdin",
+  content = "",
+}) {
   return `
     <!doctype html>
     <html lang="ru">
