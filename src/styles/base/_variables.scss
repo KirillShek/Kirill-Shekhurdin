@@ -1,0 +1,26 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@500;700&display=swap');
+
+:root {
+  --color-primary: #41106e;
+  --color-accent: #7122ba;
+  --color-black: #000000;
+  --color-bg: #1d0933;
+  --color-bg-soft: #2a0f46;
+  --color-surface: #331252;
+  --color-surface-alt: #3a145d;
+  --color-text: #f4ebff;
+  --color-text-muted: #cdb7e7;
+  --color-border: rgba(185, 136, 237, 0.35);
+  --shadow-soft: 0 16px 40px rgba(0, 0, 0, 0.28);
+
+  --font-main: 'Montserrat', sans-serif;
+  --font-accent: 'Roboto', sans-serif;
+
+  --container: 1120px;
+  --radius-lg: 24px;
+  --radius-md: 16px;
+  --radius-sm: 12px;
+
+  --transition-fast: 0.18s ease;
+  --transition-main: 0.28s ease;
+}

@@ -1,0 +1,33 @@
+﻿.soft-skills__list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.soft-skills__item {
+  position: relative;
+  border: 1px solid rgba(190, 141, 240, 0.26);
+  border-radius: var(--radius-sm);
+  padding: 0.95rem 1rem 0.95rem 2.2rem;
+  background: rgba(26, 9, 44, 0.58);
+  color: #e3d3f8;
+  line-height: 1.55;
+}
+
+.soft-skills__item::before {
+  content: '';
+  position: absolute;
+  top: 1.25rem;
+  left: 0.95rem;
+  width: 0.65rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #b765ff 0%, #7122ba 100%);
+  box-shadow: 0 0 0 3px rgba(144, 75, 212, 0.23);
+}
+
+@media (max-width: 780px) {
+  .soft-skills__list {
+    grid-template-columns: 1fr;
+  }
+}

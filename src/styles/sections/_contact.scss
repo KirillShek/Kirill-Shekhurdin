@@ -1,0 +1,20 @@
+﻿.contact {
+  text-align: center;
+  background:
+    radial-gradient(circle at 50% -20%, rgba(128, 53, 201, 0.35) 0%, transparent 60%),
+    linear-gradient(145deg, rgba(59, 18, 95, 0.94) 0%, rgba(39, 12, 62, 0.9) 100%);
+}
+
+.contact__eyebrow {
+  margin-bottom: 0.8rem;
+  color: #d3b8f0;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font: 500 0.8rem / 1.3 var(--font-accent);
+}
+
+.contact__title {
+  margin: 0 auto 1.2rem;
+  max-width: 26ch;
+  font: 700 clamp(1.3rem, 3vw, 2rem) / 1.25 var(--font-main);
+}
