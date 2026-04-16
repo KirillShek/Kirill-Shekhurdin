@@ -1,0 +1,11 @@
+body {
+  font-family: 'Manrope', sans-serif;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+.page {
+  width: min(100% - 32px, var(--container));
+  margin-inline: auto;
+  padding-block: 40px;
+}
