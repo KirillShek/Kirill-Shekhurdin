@@ -4,7 +4,6 @@ import { defineConfig } from 'eslint/config'
 import prettierPlugin from 'eslint-plugin-prettier'
 import prettierConfig from 'eslint-config-prettier'
 
-
 export default defineConfig([
   {
     files: ['/**/*.{js,mjs,cjs}'],
@@ -29,5 +28,3 @@ export default defineConfig([
     },
   },
 ])
-
-
