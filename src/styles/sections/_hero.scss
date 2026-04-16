@@ -47,6 +47,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.55rem;
+  user-select: none;
 }
 
 .hero__meta li {
