@@ -15,7 +15,12 @@
       <ul class="hero__meta" aria-label="Ключевые направления">
         <li>Vite</li>
         <li>JSX</li>
+        <li>HTML5</li>
+        <li>BEM</li>
+        <li>JS</li>
         <li>SCSS</li>
+        <li>Figma</li>
+        <li>CMS</li>
         <li>Git Workflow</li>
       </ul>
     </section>
