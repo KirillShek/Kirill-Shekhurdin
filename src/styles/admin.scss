@@ -1,0 +1,126 @@
+@import "./base/variables";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  color: #f3e7ff;
+  background:
+    radial-gradient(circle at 10% -10%, rgba(113, 34, 186, 0.32), transparent 40%),
+    linear-gradient(160deg, #1b0a2f 0%, #180826 52%, #13051f 100%);
+}
+
+.admin-page {
+  padding: 2rem 1rem 4rem;
+}
+
+.admin-wrap {
+  width: min(100%, 980px);
+  margin-inline: auto;
+}
+
+.admin-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.admin-title {
+  margin: 0;
+  font-size: clamp(1.6rem, 2.4vw, 2.1rem);
+}
+
+.admin-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  border: 1px solid rgba(215, 180, 250, 0.34);
+  padding: 0.62rem 1rem;
+  color: inherit;
+  text-decoration: none;
+  background: rgba(58, 20, 93, 0.6);
+}
+
+.admin-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.admin-section {
+  display: grid;
+  gap: 0.75rem;
+  border: 1px solid rgba(215, 180, 250, 0.24);
+  border-radius: 1rem;
+  padding: 1.2rem;
+  background: rgba(49, 17, 79, 0.62);
+}
+
+.admin-section h2 {
+  margin: 0 0 0.35rem;
+  font-size: 1.1rem;
+}
+
+.admin-section label {
+  display: grid;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.admin-section input,
+.admin-section textarea {
+  width: 100%;
+  border: 1px solid rgba(215, 180, 250, 0.34);
+  border-radius: 0.65rem;
+  padding: 0.7rem 0.8rem;
+  color: #f8f0ff;
+  background: rgba(21, 8, 36, 0.55);
+  font-family: var(--font-main);
+}
+
+.admin-section code {
+  font-family: var(--font-accent);
+}
+
+.admin-footer {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+
+.admin-btn {
+  border: 1px solid transparent;
+  border-radius: 999px;
+  padding: 0.72rem 1.1rem;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(135deg, var(--color-accent) 0%, #4c177f 100%);
+}
+
+.admin-btn--ghost {
+  border-color: rgba(215, 180, 250, 0.34);
+  background: rgba(58, 20, 93, 0.6);
+}
+
+.admin-status {
+  margin: 0;
+  font-size: 0.92rem;
+  color: #d6bbe9;
+}
+
+.admin-status[data-type="error"] {
+  color: #ffb9b9;
+}
+
+@media (max-width: 720px) {
+  .admin-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
